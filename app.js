@@ -1,13 +1,15 @@
-// String Concatenation - combine string values
-// `` - backticks (template strings) easier option
+/*
+Concatenate Strings #2
 
-const name = "john";
-const lastName = "shakeandbake";
-let fullName = name + " " + lastName + ".";
+1. create "street" and "country" variables
+2. assign your values
+3. create "fullMailingAddress" variable and assign the result of "street + country"
+4. remember about the space
+5. log "fullMailingAddress" in the console
 
-console.log("Hello there my full name is: " + fullName);
+*/
 
-const website = "youTube";
-const url = "https://www." + website + ".com";
-console.log(url);
-
+const street = "101 main street";
+const country = "russia";
+const fullMailingAddress = street + " " + country;
+console.log(fullMailingAddress);
