@@ -1,24 +1,17 @@
-// Variable - Most basic building block
-// Variables - Store, access, modify === value
-// Declare, assignment operator, assign value
-// assign value later, modify existing
-// can contain digits, letters, underscore, $
-// must start with a letter, $ or _
+/*
+## Variables #1
 
-// cannot use keywords as variables
-// cannot start with a number
+1. create "firstName" and "last_name" variables
+2. assign your values
+3. create "address" variable and assign "main street" value to it
+4. reassign address to "first street" later
+5. log all values in the console
+*/
 
-// case sensitive - fullname vs Fullname
+let firstName, last_name;
+firstName = "nrom";
+last_name = "strekar";
+let address = "main street";
+address = "first street";
+console.log(firstName, last_name, address);
 
-// camelCase or underscore (full_name)
-
-// using const (CONSTANT) - can't be reassigned
-// cannot assign a const without a value as you can with let
-
-let name = "norm";
-let address, zip, state, city;
-address = "101 main street"
-zip = "76777"
-city = "Saginaw"
-state = "MI"
-console.log(name, address, city, state, zip)
