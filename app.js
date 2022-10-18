@@ -1,17 +1,13 @@
-/*
-## Variables #1
+// String Concatenation - combine string values
+// `` - backticks (template strings) easier option
 
-1. create "firstName" and "last_name" variables
-2. assign your values
-3. create "address" variable and assign "main street" value to it
-4. reassign address to "first street" later
-5. log all values in the console
-*/
+const name = "john";
+const lastName = "shakeandbake";
+let fullName = name + " " + lastName + ".";
 
-let firstName, last_name;
-firstName = "nrom";
-last_name = "strekar";
-let address = "main street";
-address = "first street";
-console.log(firstName, last_name, address);
+console.log("Hello there my full name is: " + fullName);
+
+const website = "youTube";
+const url = "https://www." + website + ".com";
+console.log(url);
 
