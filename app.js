@@ -1,15 +1,21 @@
-/*
-Concatenate Strings #2
+// Numbers #3 Challenges
 
-1. create "street" and "country" variables
-2. assign your values
-3. create "fullMailingAddress" variable and assign the result of "street + country"
-4. remember about the space
-5. log "fullMailingAddress" in the console
+// const score1 = 20;
+// const score2 = 30;
+// const score3 = 49;
 
-*/
+// let totalScore, averageScore;
+// totalScore = score1 + score2 + score3;
+// averageScore = (totalScore)/3;
 
-const street = "101 main street";
-const country = "russia";
-const fullMailingAddress = street + " " + country;
-console.log(fullMailingAddress);
+// console.log(totalScore, averageScore)
+
+const plates = 20;
+const people = 7;
+
+let remainingPlates = (plates % people);
+remainingPlates++;
+
+const message = `There are ${remainingPlates} plates available.`;
+
+console.log(message);
