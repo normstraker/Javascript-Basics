@@ -1,19 +1,14 @@
 // Arrays, Functions and Objects
-// Functions - declace, invoke
+// params - when declare/define
+// placeholders, local vars
+// arguments - when invoke/call/run
+// use var/values, multiple params, undefined
+// local variables - only used within the function
 
-// function declaration
-function hello() {
-  console.log("Hello There Bob");
-  console.log("Hello There Anna");
-  console.log("Hello There Susie");
+function greet(name) {
+  console.log(`Hello there ${name}!`);
 }
-// function invocation
-hello();
 
-// some code here....
-hello();
-
-// some code here....
-hello();
-
-// some code here....
+greet("Jonathan");
+greet("Mattia");
+greet("Perambulathu");
