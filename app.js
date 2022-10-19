@@ -1,28 +1,16 @@
-// Data Types - 7 total
-// Primitive - String, Number, Boolean, Null, Undefined, Symbol
-// Object - Arrays, Functions, Objects
+// Arrays, Functions and Objects
+// Arrays = [], 0 index based
 
-// typeof - operator (typeof variable) (typeof value)
+const friend1 = "anna";
+const friend2 = "bob";
+const friend3 = "carla";
+const friend4 = "david";
 
-// String
-const text = "some text";
-// Number
-const numberEx = 45;
-// Boolean
-let value1 = true;
-let value2 = false;
-// Null
-const result = null;
-// Undefined
-let name;
-// Symbol(ES6)
+const friends = ["john", "peter", "bob", "susie", 45, undefined, null];
 
-console.log(typeof text);
-console.log(typeof "some text");
-console.log(typeof numberEx);
-console.log(typeof 45);
-console.log(typeof value1);
-console.log(typeof value2);
-// typeof null returns object - this is wrong - a bug in js - should return null
-console.log(typeof result);
-console.log(typeof name);
+let bestFriend = friends[3];
+friends[4] = "anna";
+console.log(friends[4]);
+console.log(friends);
+console.log(friends[0]);
+console.log(bestFriend);
