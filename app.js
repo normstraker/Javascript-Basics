@@ -1,6 +1,19 @@
-// Arrays Challenge #4
+// Arrays, Functions and Objects
+// Functions - declace, invoke
 
-const fruits = ['apple', 'banana', 'coconut', 'date', 45]
-const firstFruit = fruits[0]
-fruits[4] = 'fig'
-console.log(firstFruit, fruits)
+// function declaration
+function hello() {
+  console.log("Hello There Bob");
+  console.log("Hello There Anna");
+  console.log("Hello There Susie");
+}
+// function invocation
+hello();
+
+// some code here....
+hello();
+
+// some code here....
+hello();
+
+// some code here....
