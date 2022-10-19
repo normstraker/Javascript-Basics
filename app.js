@@ -1,21 +1,28 @@
-// Numbers #3 Challenges
+// Data Types - 7 total
+// Primitive - String, Number, Boolean, Null, Undefined, Symbol
+// Object - Arrays, Functions, Objects
 
-// const score1 = 20;
-// const score2 = 30;
-// const score3 = 49;
+// typeof - operator (typeof variable) (typeof value)
 
-// let totalScore, averageScore;
-// totalScore = score1 + score2 + score3;
-// averageScore = (totalScore)/3;
+// String
+const text = "some text";
+// Number
+const numberEx = 45;
+// Boolean
+let value1 = true;
+let value2 = false;
+// Null
+const result = null;
+// Undefined
+let name;
+// Symbol(ES6)
 
-// console.log(totalScore, averageScore)
-
-const plates = 20;
-const people = 7;
-
-let remainingPlates = (plates % people);
-remainingPlates++;
-
-const message = `There are ${remainingPlates} plates available.`;
-
-console.log(message);
+console.log(typeof text);
+console.log(typeof "some text");
+console.log(typeof numberEx);
+console.log(typeof 45);
+console.log(typeof value1);
+console.log(typeof value2);
+// typeof null returns object - this is wrong - a bug in js - should return null
+console.log(typeof result);
+console.log(typeof name);
