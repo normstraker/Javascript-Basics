@@ -1,24 +1,17 @@
-// Arrays, Functions and Objects
-// expressions - another way to define a function
-// create a variable, assign to a FUNCTION (not value), use var
-// diff - hoisting, use - arrow func, libraries
+// Functions #5 Challenge
 
-// function definition/declaration
-function addValues(num1, num2) {
-  return num1 + num2;
-}
+// function calculateTotal(subTotal, tax) {
+//   return subTotal + tax;
+// }
+// console.log(calculateTotal(200, 20));
 
-const firstValue = addValues(3, 4);
-const secondValue = addValues(12, 34);
-
-// function expression (you can omit (or keep) the name "addValues" since the value is now in the const "add") - anonomous function
-const add = function (num1, num2) {
-  return num1 + num2;
+// Refactored;
+const calculateTotal = function (subTotal, tax) {
+  return subTotal + tax;
 };
 
-// const thirdValue = add(5, 6);
-const values = [firstValue, secondValue, add(5, 6)];
-console.log(values);
+const order1 = calculateTotal(100, 10);
+const order2 = calculateTotal(50, 5);
+const order3 = calculateTotal(25, 5);
 
-// arrow function (only as an expression)
-const multiply = (num1, num2) => num1 * num2
+console.log(order1, order2, order3);
