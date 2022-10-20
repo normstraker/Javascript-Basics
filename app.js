@@ -1,46 +1,35 @@
-// Arrays, Functions and Objects
-// Objects - key/value pairs  methods (when a function is a value in an object)
-// dot notation
+// Conditional Statements
+// Comparison Operators
+// >, <, >=, <=, ==, ===, !=, !===
+// else if and !
 
-// creating an object
-const person = {
-  name: "john",
-  lastName: "peters",
-  age: 40,
-  education: false,
-  married: true,
-  siblings: ["anna", "susan", "peter"],
-  // common way to add method to object (no function word)
-  // greeting(){}
-  greeting: function () {
-    console.log("hello my name is JOHN");
-  },
-};
+// =============================
+// const value = 2 > 1;
+// console.log(typeof value)
+// const value2 = false;
 
-const age = person.age;
-console.log(age);
-person.name = "bob";
-console.log(person.name);
-console.log(person.siblings[2]);
-// run the method
-person.greeting();
+// if(value){ // if value is true
+//   console.log('hello wolrd')
+// } else { // if value is false
+//   console.log('hello peolpe')
+// }
+// =============================
 
-// Object Challenge
+const num1 = 6;
+const num2 = 6;
+const result = num1 >= num2;
 
-const car = {
-  make: "Honda",
-  model: "Accord",
-  year: 2017,
-  colors: ["white", "tan", "black"],
-  hybrid: false,
-  drive() {
-    console.log("smooth drive with lots of power");
-  },
-  stop() {
-    console.log("advanced braking");
-  },
-};
-console.log(car.make);
-console.log(car.colors[0]);
-car.drive();
-car.stop();
+const value = false
+
+if(!value){
+  console.log('value is false')
+}
+
+// if (num1 > num2) {
+//   console.log("first number is larger than second number");
+// } else if (result) {
+//   // num1 >= num2
+//   console.log("first number is equal to second number");
+// } else {
+//   console.log("second number is larger than first number");
+// }
