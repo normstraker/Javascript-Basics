@@ -1,17 +1,26 @@
-// Functions #5 Challenge
+// Arrays, Functions and Objects
+// Objects - key/value pairs  methods (when a function is a value in an object)
+// dot notation
 
-// function calculateTotal(subTotal, tax) {
-//   return subTotal + tax;
-// }
-// console.log(calculateTotal(200, 20));
-
-// Refactored;
-const calculateTotal = function (subTotal, tax) {
-  return subTotal + tax;
+// creating an object
+const person = {
+  name: "john",
+  lastName: "peters",
+  age: 40,
+  education: false,
+  married: true,
+  siblings: ["anna", "susan", "peter"],
+  // common way to add method to object (no function word)
+  // greeting(){}
+  greeting: function () {
+    console.log("hello my name is JOHN");
+  },
 };
 
-const order1 = calculateTotal(100, 10);
-const order2 = calculateTotal(50, 5);
-const order3 = calculateTotal(25, 5);
-
-console.log(order1, order2, order3);
+const age = person.age;
+console.log(age)
+person.name = "bob"
+console.log(person.name);
+console.log(person.siblings[2]);
+// run the method
+person.greeting();
