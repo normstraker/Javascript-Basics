@@ -1,47 +1,25 @@
-// Switch
-// dice values: 1 - 6
+// Conditional Statements Challenge
 
-const dice = 4;
+const person1 = {
+  name: "nrom",
+  age: 17,
+  status: "tourist",
+};
 
-switch (dice) {
-  case 1:
-    console.log("you got one");
-    break;
-  case 2:
-    console.log("you got two");
-    break;
-  case 3:
-    console.log("you got three");
-    break;
-  case 4:
-    console.log("you got four");
-    break;
-  case 5:
-    console.log("you got five");
-    break;
-  case 6:
-    console.log("you got six");
-    break;
-  default:
-    console.log("you did not roll the dice");
+const person2 = {
+  name: "shrilye",
+  age: 55,
+  status: "resident",
+};
+
+if (person1.age >= 18 && person1.status === "resident") {
+  console.log("welcome to the usa");
+} else {
+  console.log("sorry, no entry");
 }
 
-// else if
-// if (dice === 1) {
-//   console.log("you got one");
-// } else if (dice === 2) {
-//   console.log("you got two");
-// } else {
-//   console.log("you did not roll the dice");
-// }
-
-// all if
-// if (dice === 1) {
-//   console.log('you got one')
-// }
-// if (dice === 2) {
-//   console.log('you got two')
-// }
-// if (dice < 1 || dice >6) {
-//   console.log('you did not roll the dice')
-// }
+if (person2.age >= 18 && person2.status === "resident") {
+  console.log("welcome to the usa");
+} else {
+  console.log("sorry, no entry");
+}
