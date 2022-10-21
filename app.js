@@ -1,13 +1,12 @@
 // Loops
 // repeatedly run a block of code while the condition is met or true
-// code block first, condition second
-// runs at least
-// TURN OFF AUTOSAVE
+// for loop
 
-// let money = 12;
-let money = 0;
+// let i;
+// for (i = 0; i < 10; i++) {
+//   console.log(`and the number is: ${i}`);
+// }
 
-do {
-  console.log(`You have ${money} dollars`);
-  money++;
-} while (money < 10);
+for (number = 11; number >= 0; number--) {
+  console.log(`and the number is: ${number}`);
+}
