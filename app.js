@@ -1,11 +1,47 @@
-// Logical Operators
-// (|| - OR), (&& - AND), !
+// Switch
+// dice values: 1 - 6
 
-const name = "bob";
-const age = 23;
+const dice = 4;
 
-if(name === "bob" && age !== 24){
-  console.log('hello there user')
-} else {
-  console.log('wrong values')
+switch (dice) {
+  case 1:
+    console.log("you got one");
+    break;
+  case 2:
+    console.log("you got two");
+    break;
+  case 3:
+    console.log("you got three");
+    break;
+  case 4:
+    console.log("you got four");
+    break;
+  case 5:
+    console.log("you got five");
+    break;
+  case 6:
+    console.log("you got six");
+    break;
+  default:
+    console.log("you did not roll the dice");
 }
+
+// else if
+// if (dice === 1) {
+//   console.log("you got one");
+// } else if (dice === 2) {
+//   console.log("you got two");
+// } else {
+//   console.log("you did not roll the dice");
+// }
+
+// all if
+// if (dice === 1) {
+//   console.log('you got one')
+// }
+// if (dice === 2) {
+//   console.log('you got two')
+// }
+// if (dice < 1 || dice >6) {
+//   console.log('you did not roll the dice')
+// }
