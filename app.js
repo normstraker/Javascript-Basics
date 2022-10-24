@@ -1,33 +1,11 @@
-// String properties and methods
-// wrapper String Object, don't memoize methods
+// Template Literals - ES6+
+// Backtick characters `` - above tab key
+// Interpolation ${} - insert expression(value)
 
-let text = " Peter Jordan";
-let result = text.length;
-console.log(result);
+const name = 'john'
+const age = 25
+const sentence = "Hey it's " + name + ' and he is ' + age + " years old."
+const newSentence = `Hey it's ${name} and he is ${age} years old and ${4 + 4} is my brother's age.`
 
-console.log(text.length);
-console.log(text.toLowerCase());
-console.log(text.toUpperCase());
-console.log(text.charAt(0));
-console.log(text.charAt(12));
-console.log(text.charAt(text.length - 1));
-console.log(text.charAt(result - 1));
-console.log(text.indexOf("e"));
-console.log(text.trim());
-console.log(text.trim().toLowerCase().startsWith("peter"));
-console.log(text.includes("eter"));
-console.log(text.slice(0, 4));
-console.log(text.slice(-4));
-
-// const person = {
-//   name: "peter", // property
-//   greeting() {
-//     // method
-//     console.log("Hey, I'm Peter");
-//   },
-// };
-
-// console.log(person);
-
-// console.log(person.name);
-// person.greeting();
+console.log(sentence)
+console.log(newSentence)
