@@ -1,16 +1,28 @@
-// Strings Challenge #8
+// Array Properties and Methods
+let names = ["john", "bobo", "barry", "olga", "ben"];
 
-// function fullName(firstName, lastName) {
-//   const fullName = `${firstName} ${lastName}`;
-//   return fullName.toUpperCase();
-// }
+// length
+console.log(names.length);
+console.log(names[names.length - 1]);
 
-// console.log(fullName("Alexander", "Perambulathu"));
-
-function fullName({ firstName, lastName }) {
-  const fullName = `${firstName} ${lastName}`;
-  return fullName.toUpperCase();
-}
-
-// order doesn't matter
-console.log(fullName({ lastName: "Perambulathu", firstName: "Alexander" }));
+// concat
+const lastNames = ["pepper", "onion", "banana"];
+const allNames = names.concat(lastNames);
+console.log(allNames);
+// reverse
+console.log(allNames.reverse());
+// unshift
+allNames.unshift("susy");
+console.log(allNames);
+// shift
+allNames.shift()
+console.log(allNames)
+// push
+allNames.push('susy')
+console.log(allNames)
+// pop
+allNames.pop()
+console.log(allNames)
+// slice - mutates the original array
+allNames.splice(2, 1)
+console.log(allNames)
