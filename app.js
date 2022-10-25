@@ -1,28 +1,16 @@
-// Array Properties and Methods
-let names = ["john", "bobo", "barry", "olga", "ben"];
+// Array and for loop
 
-// length
-console.log(names.length);
-console.log(names[names.length - 1]);
+const names = ["Walter", "Shirley", "Rick", "Vicki", "Jackie", "Pam", "Norm", "Jon"];
+const lastName = "Straker";
+let newArray = [];
 
-// concat
-const lastNames = ["pepper", "onion", "banana"];
-const allNames = names.concat(lastNames);
-console.log(allNames);
-// reverse
-console.log(allNames.reverse());
-// unshift
-allNames.unshift("susy");
-console.log(allNames);
-// shift
-allNames.shift()
-console.log(allNames)
-// push
-allNames.push('susy')
-console.log(allNames)
-// pop
-allNames.pop()
-console.log(allNames)
-// slice - mutates the original array
-allNames.splice(2, 1)
-console.log(allNames)
+// for loop
+for (let i = 0; i < names.length; i++) {
+  console.log(i);
+  console.log(names[i]);
+  // const fullName = `${names[i]} ${lastName}`;
+  newArray.push(`${names[i]} ${lastName}`);
+}
+
+console.log(names);
+console.log(newArray);
