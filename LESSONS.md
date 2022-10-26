@@ -33,7 +33,11 @@
 [String Properties and Methods](#string-properties-and-methods)  
 [Template Literals](#template-literals)  
 [Strings Challenge](#strings-challenge)  
-[Array Properties and Methods](#array-properties-and-methods)
+[Array Properties and Methods](#array-properties-and-methods)  
+[Exercise - Full Name](#exercise---full-name)  
+[Exercise - Calculate Total](#exercise---calculate-total)  
+[Value vs Reference](#value-vs-reference)  
+[Null and Undefined](#null-and-undefined)
 
 ## Inline Javascript
 
@@ -579,43 +583,46 @@ Concatenate Strings #2
 // person.greeting();[ ▲](#contents)
 
 ## Template Literals
+
 // Template Literals - ES6+  
 // Backtick characters `` - above tab key  
-// Interpolation ${} - insert expression(value)  
+// Interpolation ${} - insert expression(value)
 
 `const name = 'john'`  
 `const age = 25`  
 `const sentence = "Hey it's " + name + ' and he is ' + age + " years old."`  
-`const newSentence = Hey it's ${name} and he is ${age} years old and ${4 + 4} is my brother's age.`  
+`const newSentence = Hey it's ${name} and he is ${age} years old and ${4 + 4} is my brother's age.`
 
 `console.log(sentence)`  
 `console.log(newSentence)`[ ▲](#contents)
 
 ## Strings Challenge
-// Strings Challenge #8  
+
+// Strings Challenge #8
 
 // function fullName(firstName, lastName) {  
-//   const fullName = ${firstName} ${lastName};  
-//   return fullName.toUpperCase();  
-// }  
+// const fullName = ${firstName} ${lastName};  
+// return fullName.toUpperCase();  
+// }
 
-// console.log(fullName("Alexander", "Perambulathu"));  
+// console.log(fullName("Alexander", "Perambulathu"));
 
 `function fullName({ firstName, lastName }) {`  
  ` const fullName = ${firstName} ${lastName};`  
  ` return fullName.toUpperCase();`  
-`}`  
+`}`
 
 // order doesn't matter  
 `console.log(fullName({ lastName: "Perambulathu", firstName: "Alexander" }));`[ ▲](#contents)
 
 ## Array Properties and Methods
+
 // Array Properties and Methods  
-`let names = ["john", "bobo", "barry", "olga", "ben"];`  
+`let names = ["john", "bobo", "barry", "olga", "ben"];`
 
 // length  
 `console.log(names.length);`  
-`console.log(names[names.length - 1]);`  
+`console.log(names[names.length - 1]);`
 
 // concat  
 `const lastNames = ["pepper", "onion", "banana"];`  
@@ -638,3 +645,95 @@ Concatenate Strings #2
 // slice - mutates the original array  
 `allNames.splice(2, 1)`  
 `console.log(allNames)`[ ▲](#contents)
+
+## Exercise - Full Name
+
+// Array and for loop
+
+`const names = ["Walter", "Shirley", "Rick", "Vicki", "Jackie", "Pam", "Norm", "Jon"];`  
+`const lastName = "Straker";`  
+`let newArray = [];`
+
+// for loop  
+`for (let i = 0; i < names.length; i++) {`  
+ ` console.log(i);`  
+ ` console.log(names[i]);`  
+ // const fullName = `${names[i]} ${lastName}`;  
+ ` newArray.push(${names[i]} ${lastName});`  
+`}`
+
+`console.log(names);`  
+`console.log(newArray);`[ ▲](#contents)
+
+## Exercise - Calculate Total
+
+// Functions, return, if, arrays, for loop
+
+`const gas = [20, 40, 100, 30];`  
+`const food = [10, 40, 50];`
+
+`function calculateTotal(arr) {`  
+ ` let total = 0;`  
+ ` for (let i = 0; i < arr.length; i++) {`  
+ ` total += arr[i];`  
+ ` }`  
+ ` if(total > 100){`  
+ ` console.log(Whoa! You are spending way too much!)`  
+ ` return total;`  
+`} `  
+`console.log(You are good, total is less than $100.)`  
+ ` return total;`  
+`}`
+
+`const gasTotal = calculateTotal(gas);`  
+`const foodTotal = calculateTotal(food);`  
+`const randomTotal = calculateTotal([200, 4000, 500, 1]);`
+
+`console.log({`  
+ ` gas: gasTotal,`  
+ ` food: foodTotal,`  
+ ` random: randomTotal,`  
+`});`[ ▲](#contents)
+
+## Value vs Reference
+
+// Reference vs Value  
+// Primitive Data Types  
+// String, Number, Symbol, Boolean, Undefined, Null  
+// Arrays, Functions, Objects = object  
+// typeof - to check
+
+// when assigning primitive data type value to a variable any changes are made directly to that value, without affecting original value
+
+// when assigning non-primitive data type value to a variable is done by reference so any changes will affect all the references.
+
+`const number = 1;`  
+// const number2 = number;  
+`let number2 = number;`  
+`number2 = 7;`  
+`console.log(the first value is ${number});`  
+`console.log(the second value is ${number2});`
+
+`let person = {name:'bob'}`  
+`let person2 = person`  
+`person2.name = 'susy'`  
+`console.log(the name of the first person is ${person.name})`  
+`console.log(the name of the second person is ${person2.name})`[ ▲](#contents)
+
+## Null and Undefined
+
+// Null and Undefined  
+// both represent "no value"
+
+// undefined - "javascript cannot find a value for this"
+
+// variable without value  
+// missing fuction arguments  
+// missing object properties
+
+// null - "developer sets the value"
+
+`let number = 20 + null // 20 + 0 (set by user)`  
+`console.log(number)`  
+`let number2 = 20 + undefined`  
+`console.log(number2)`[ ▲](#contents)
